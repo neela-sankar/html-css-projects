@@ -1,2 +1,2 @@
 # html-css-projects
-My HTML CSS Projects
+My Simple HTML CSS Projects
