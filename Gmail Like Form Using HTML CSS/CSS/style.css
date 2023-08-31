@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form img{
+    width: 125px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.form{
+    width: 400px;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.form-title{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.form-group{
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.form-label{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #a1a1a1;
+    background-color: white;
+    padding: 0 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-control:focus+ .form-label{
+    top: -10px;
+    z-index: 10;
+    color: #1b66c9;
+    font-weight: 500;
+}
+
+.form-control:focus{
+    border:
+     1px solid #1b66c9;
+}
+
+.form-control:not(:focus):valid+label{
+    top: -10px;
+    z-index: 10;
+}
+
+.show-label{
+    font-size: 14px;
+}
+
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.bottom-box a{
+    color:#1b66c9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-button{
+    display: block;
+    padding: 12px 28px;
+    border: none;
+    background-color: #1b66c9;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: 0.3s;
+}
+
+.form-button:hover{
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    background-color: #276ac3;
+}
