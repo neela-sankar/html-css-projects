@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card-container">
+            <div class="card">
+                <div class="login-form">
+                    <form action="#">
+                        <h2 class="header">Login</h2>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="forget">
+                            <label for="remember">
+                                <input type="checkbox" id="remember">
+                                <p>Remember me</p>
+                            </label>
+                            <a href="#" class="pass">Forget Password?</a>
+                        </div>
+                        <button type="submit">Login</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="#" class="btn-rotate" onclick="openRegister()">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="register-form">
+                    <form action="#">
+                        <h2 class="header">Signup</h2>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <button type="submit">Register</button>
+                    </form>
+                        <div class="footer">
+                            <button class="btn btn-rotate" id="btn-login" onclick="openLogin()">I already have an account</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var card = document.querySelector('.card')
+
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)"
+        }
+
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)"
+        }
+
+    </script>
+</body>
+</html>
